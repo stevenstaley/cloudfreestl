@@ -1,8 +1,3 @@
-import streamlit as st
-
-st.markdown("""
-<style>
-
 /* =========================================================
    CLOUDFREE STL — LIGHT / CLEAN CUSTOMER THEME
    ========================================================= */
@@ -580,35 +575,3 @@ hr {
 
     margin: 2rem 0 !important;
 }
-
-
-/* ---------- Responsive ---------- */
-
-@media (max-width: 768px) {
-
-    .block-container {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .cf-hero {
-        padding: 38px 25px;
-        border-radius: 20px;
-    }
-
-    .cf-hero h1 {
-        font-size: 2.3rem !important;
-    }
-
-    .cf-header {
-        padding: 12px 15px;
-    }
-
-    .cf-cta {
-        padding: 30px 24px;
-    }
-
-}
-
-</style>
-""", unsafe_allow_html=True)
