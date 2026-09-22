@@ -1,4 +1,5 @@
 import streamlit as st
+from pathlib import Path
 
 from components.header import render_header
 from components.hero import render_hero
@@ -16,8 +17,10 @@ st.set_page_config(
 )
 
 
-# Load CSS
-with open("styles/main.css") as f:
+
+
+CSS_FILE = Path(__file__).parent / "styles" / "main.css"
+with open(CSS_FILE, "r", encoding="utf-8") as f:
     st.markdown(
         f"<style>{f.read()}</style>",
         unsafe_allow_html=True
