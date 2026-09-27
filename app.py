@@ -1,41 +1,35 @@
 import streamlit as st
+import os
 from pathlib import Path
-
-from components.header import render_header
-from components.hero import render_hero
-from components.trust import render_trust
-from components.services import render_services
-from components.cta import render_cta
-from components.footer import render_footer
-
+import base64
 
 st.set_page_config(
-    page_title="CloudFree STL",
-    page_icon="☁️",
+    page_title="Cloud Free STL",
     layout="wide",
-    initial_sidebar_state="collapsed",
 )
 
+page_element="""
+<style>
+[data-testid="stAppViewContainer"]{
+  background-image: url("assets/background.png");
+  background-size: cover;
+}
+</style>
+"""
 
+st.markdown(page_element, unsafe_allow_html=True)
 
+pages = [
+    st.Page("pages/home.py", title="Home"),
+    st.Page("pages/user_guide.py", title="User Guide"),
+    st.Page("pages/api.py", title="API"),
+    st.Page("pages/examples.py", title="Examples"),
+    st.Page("pages/community.py", title="Community"),
+]
 
-CSS_FILE = Path(__file__).parent / "styles" / "main.css"
-with open(CSS_FILE, "r", encoding="utf-8") as f:
-    st.markdown(
-        f"<style>{f.read()}</style>",
-        unsafe_allow_html=True
-    )
+pg = st.navigation(
+    pages,
+    position="top",
+)
 
-
-# Page
-render_header()
-
-render_hero()
-
-render_trust()
-
-render_services()
-
-render_cta()
-
-render_footer()
+pg.run()

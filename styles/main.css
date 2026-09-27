@@ -1,0 +1,12 @@
+nav {
+    background: red !important;
+}
+
+nav a {
+    font-size: 30px !important;
+    font-weight: 900 !important;
+}
+
+body {
+    background: red !important;
+}
