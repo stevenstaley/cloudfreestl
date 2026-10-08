@@ -1,13 +1,5 @@
 import streamlit as st
-import os
-from pathlib import Path
-# from utils.functions import set_bg_hack
 import base64
-
-st.set_page_config(
-    page_title="Cloud Free STL",
-    layout="wide",
-)
 
 def set_bg_hack(local_image_path):
     # Read and encode the image
@@ -32,19 +24,4 @@ def set_bg_hack(local_image_path):
         unsafe_allow_html=True
     )
 
-set_bg_hack('assets/background.png') 
-
-pages = [
-    st.Page("pages/home.py", title="Home"),
-    st.Page("pages/services.py", title="Services"),
-    st.Page("pages/about.py", title="About"),
-    # st.Page("pages/examples.py", title="Examples"),
-    # st.Page("pages/community.py", title="Community"),
-]
-
-pg = st.navigation(
-    pages,
-    position="top",
-)
-
-pg.run()
+# Usage: set_bg_hack('background.png')   
