@@ -3,6 +3,7 @@
 # Apple's design language: clean, minimalist, elegant with generous white space
 
 [theme]
+base = "dark"
 primaryColor = "#0071e3"
 backgroundColor = "#ffffff"
 secondaryBackgroundColor = "#f5f5f7"
