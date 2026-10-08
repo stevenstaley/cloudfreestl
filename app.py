@@ -3,10 +3,10 @@ import os
 from pathlib import Path
 # from utils.functions import set_bg_hack
 from styles.global_css import apply_global_css
-apply_global_css()
+apply_global_css(logo_height="120px")
 import base64
 
-
+st.logo("businesscard-transparent.png", size='large', link="https://app.cloudfreestl.com")
 
 st.set_page_config(
     page_title="Cloud Free STL",
@@ -24,7 +24,7 @@ pg = st.navigation(
     pages,
     position="top",
 )
-st.logo("lb-logo-t.png", size='large', link="https://app.cloudfreestl.com")
+
 
 
 pg.run()
