@@ -1,7 +1,6 @@
 import streamlit as st
 import os
 from pathlib import Path
-# from utils.functions import set_bg_hack
 from styles.global_css import apply_global_css
 apply_global_css(logo_height="120px")
 import base64

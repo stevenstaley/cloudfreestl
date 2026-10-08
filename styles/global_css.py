@@ -6,7 +6,7 @@ def apply_global_css(logo_height="80px"):
     css = f"""
     <style>
     .stApp {{
-        background-image: url('/app/static/background.png');
+        background-image: url('/app/static/background3.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -15,10 +15,13 @@ def apply_global_css(logo_height="80px"):
     [data-testid="stMainBlockContainer"] {{
         padding-top: 10rem;
     }}
-
+    [data-testid="stTopNavLink"] {{
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+    }}
     [data-testid="stHeader"] {{
         background-color: rgba(208, 215, 236, 0.1);
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(12px);
         font-family: 'Inter', sans-serif;
         box-shadow: none;
@@ -45,6 +48,12 @@ def apply_global_css(logo_height="80px"):
         display: flex;
         align-items: center;
     }}
-    </style>
+
+    [data-testid="stNavigation"] a {{
+    font-size: 18px !important; }}
+
+    [data-testid="stNavigation"] span {{
+    font-size: 18px !important;}}
+    </style>    
     """
     st.markdown(css, unsafe_allow_html=True)   
