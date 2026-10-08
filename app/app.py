@@ -21,10 +21,10 @@ st.markdown(page_element, unsafe_allow_html=True)
 
 pages = [
     st.Page("pages/home.py", title="Home"),
-    st.Page("pages/user_guide.py", title="User Guide"),
-    st.Page("pages/api.py", title="API"),
-    st.Page("pages/examples.py", title="Examples"),
-    st.Page("pages/community.py", title="Community"),
+    st.Page("pages/services.py", title="Services"),
+    st.Page("pages/about.py", title="About"),
+    # st.Page("pages/examples.py", title="Examples"),
+    # st.Page("pages/community.py", title="Community"),
 ]
 
 pg = st.navigation(
