@@ -23,7 +23,7 @@ pg = st.navigation(
     pages,
     position="top",
 )
-st.logo("logo-transparent.png", size='large', link="https://app.cloudfreestl.com")
+st.logo("white_logo_transparent.png", size='large', link="https://app.cloudfreestl.com")
 
 
 pg.run()
