@@ -17,13 +17,13 @@ pages = [
     st.Page("pages/home.py", title="Home"),
     st.Page("pages/services.py", title="Services"),
     st.Page("pages/about.py", title="About"),
-    # st.Page("/pages/examples.py", title="Examples"),
-    # st.Page("/pages/community.py", title="Community"),
 ]
 
 pg = st.navigation(
     pages,
     position="top",
 )
+st.logo("logo-transparent.png", size='large', link="https://app.cloudfreestl.com")
+
 
 pg.run()
