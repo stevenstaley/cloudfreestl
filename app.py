@@ -5,7 +5,7 @@ from styles.global_css import apply_global_css
 apply_global_css(logo_height="120px")
 import base64
 
-st.logo("businesscard-transparent.png", size='large', link="https://app.cloudfreestl.com")
+st.logo("logocf.png", size='large', link="https://app.cloudfreestl.com")
 
 st.set_page_config(
     page_title="Cloud Free STL",
