@@ -16,6 +16,7 @@ st.set_page_config(
 pages = [
     st.Page("pages/home.py", title="Home"),
     st.Page("pages/services.py", title="Services"),
+    st.Page("pages/resources.py", title="Resources"),
     st.Page("pages/about.py", title="About"),
 ]
 

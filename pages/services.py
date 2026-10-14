@@ -1,6 +1,7 @@
 import streamlit as st
-from styles.global_css import apply_global_css
+from styles.global_css import apply_global_css #apply_service_css
 apply_global_css(logo_height="120px")
+# apply_service_css()
 
 with st.container():
     st.markdown(
