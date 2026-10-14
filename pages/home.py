@@ -2,5 +2,15 @@ import streamlit as st
 from styles.global_css import apply_global_css
 apply_global_css(logo_height="120px")
 
-with st.container(border=True):
-    st.markdown("#### Veteran Owned • No Subscriptions • No Cloud \n ## Your Home. Your Data. Your Rules.")
+with st.container():
+    st.markdown(
+        """
+        # Your Technology. Your Data. <span style=\"color: #ff7a1a;\">Your Rules.</span>
+
+        ###### Every home and business has different needs. We work with you to understand your goals, recommend the right technology, and build customized solutions that prioritize privacy, reliability, and local control—without depending on cloud services.
+        """,
+        unsafe_allow_html=True,
+    )
+
+if st.button("Go to services"):
+    st.switch_page("pages/services.py")   

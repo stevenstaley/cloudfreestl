@@ -10,10 +10,10 @@ def apply_global_css(logo_height="80px"):
        GLOBAL APP BACKGROUND
        ========================================================= */
     .stApp {{
-        background-image: url('/app/static/background3.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(4, 15, 30, 0.6), rgba(4, 15, 30, 0.1)), url('/app/static/background3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     }}
 
     /* =========================================================
@@ -201,7 +201,7 @@ def apply_global_css(logo_height="80px"):
         font-size: 18px !important;
         font-weight: 500 !important;
         font-style: normal !important;
-        color: #cbd5e1 !important;
+        color: #ffffff !important;
         opacity: 1 !important;
         line-height: 1.5 !important;
         letter-spacing: 0px !important;
@@ -213,6 +213,48 @@ def apply_global_css(logo_height="80px"):
         text-decoration: none !important;
         text-shadow: none !important;
         overflow-wrap: break-word !important;
+    }}
+
+    /* =========================================================
+       CUSTOM BUTTON STYLES
+       ========================================================= */
+    div.stButton > button,
+    div.stLinkButton > a {{
+        background: linear-gradient(135deg, #ff9b59 0%, #ff6a00 100%) !important;
+        color: #ffffff !important;
+        border: none !important;
+        border-radius: 12px !important;
+        padding: 0.8rem 1.45rem !important;
+        font-size: 1rem !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.02em !important;
+        box-shadow: 0 10px 20px rgba(255, 106, 0, 0.24) !important;
+        transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease !important;
+        text-decoration: none !important;
+        width: fit-content !important;
+        min-width: 180px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }}
+
+    div.stButton > button:hover,
+    div.stLinkButton > a:hover {{
+        background: linear-gradient(135deg, #ffb06d 0%, #ff7a1a 100%) !important;
+        box-shadow: 0 12px 22px rgba(255, 122, 26, 0.32) !important;
+        transform: translateY(-1px) !important;
+        filter: brightness(1.03) !important;
+    }}
+
+    div.stButton > button:focus,
+    div.stLinkButton > a:focus {{
+        outline: 2px solid rgba(255, 160, 91, 0.8) !important;
+        outline-offset: 2px !important;
+        box-shadow: 0 0 0 4px rgba(255, 122, 26, 0.18) !important;
+    }}
+
+    div.stLinkButton > a {{
+        line-height: 1.2 !important;
     }}
 
     /* =========================================================
