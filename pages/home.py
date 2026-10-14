@@ -1,6 +1,6 @@
 import streamlit as st
 from styles.global_css import apply_global_css, apply_services_css
-# from utils.functions import load_png_icon
+from utils.functions import show_contact_form
 apply_global_css(logo_height="120px")
 apply_services_css()
 
@@ -83,11 +83,7 @@ with st.container(key="services-layout"):
                 "and help you find the right solution."
             )
 
-            if st.button(
-                "Contact Us  →",
-                key="services_contact",
-                use_container_width=True
-            ):
-                st.session_state["show_contact_form"] = True
+            if st.button("Contact Us", use_container_width=True):
+                show_contact_form()
 
 
